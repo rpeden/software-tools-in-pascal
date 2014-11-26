@@ -16,7 +16,17 @@ var
 	c: character;
 	inword: boolean;
 begin
-
+	nw := 0;
+	inword := false;
+	while(getc(c) <> ENDFILE) do
+		if(c = BLANK) or (c = NEWLINE) or (c = TAB) then
+			inword := false
+		else if (not inword) then begin
+			inword = true;
+			nw := nw + 1
+		end;
+	putdec(nw, 1);
+	putc(NEWLINE);
 end; {wordcount}
 
 begin
