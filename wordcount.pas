@@ -6,6 +6,9 @@ const
 type
 	character = -1..127;  { ASCII, plus ENDFILE }
 
+{$INCLUDE getc.pas}
+{$INCLUDE putc.pas}
+
 begin
 	wordcount
 end.
