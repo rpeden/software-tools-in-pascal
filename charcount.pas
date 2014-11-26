@@ -11,6 +11,15 @@ type
 {$INCLUDE getc.pas}
 {$INCLUDE putc.pas}
 
+{ charcount -- count characters in standard output }
+procedure charcount;
+var
+	nc: integer;
+	c: character;
+begin
+
+end;
+
 begin
 	{count some characters}
 end.
