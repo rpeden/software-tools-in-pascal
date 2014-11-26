@@ -17,7 +17,11 @@ var
 	nc: integer;
 	c: character;
 begin
-
+	nc := 0;
+	while (getc(c) <> ENDFILE) do
+		nc := nc + 1;
+	putdec(nc, 1);
+	putc(NEWLINE)
 end;
 
 begin
