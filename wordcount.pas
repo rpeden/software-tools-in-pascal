@@ -9,6 +9,16 @@ type
 {$INCLUDE getc.pas}
 {$INCLUDE putc.pas}
 
+{ wordcount -- count words in standard input }
+procedure wordcount;
+var
+	nw: integer;
+	c: character;
+	inword: boolean;
+begin
+
+end; {wordcount}
+
 begin
 	wordcount
 end.
