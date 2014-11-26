@@ -8,15 +8,7 @@ type
 	character = -1..127;  { ASCII, plus ENDFILE }
 
 {$INCLUDE getc.pas}
-
-{ putc -- put one character on standard input }
-procedure putc (c : character);
-begin 
-	if(c = NEWLINE) then
-		writeln
-	else
-		write(chr(c))
-end;
+{$INCLUDE putc.pas}
 
 { copy -- copy input to output }
 procedure copy;
