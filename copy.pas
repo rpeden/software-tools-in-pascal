@@ -32,7 +32,7 @@ begin
 		writeln
 	else
 		write(chr(c))
-end
+end;
 
 { copy -- copy input to output }
 procedure copy;
