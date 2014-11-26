@@ -42,3 +42,8 @@ begin
 	while (getc(c) <> ENDFILE) do
 		putc(c)
 end;
+
+{ main program }
+begin
+	copy
+end.
