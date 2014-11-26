@@ -33,3 +33,12 @@ begin
 	else
 		write(chr(c))
 end
+
+{ copy -- copy input to output }
+procedure copy;
+var
+	c: character;
+begin
+	while (getc(c) <> ENDFILE) do
+		putc(c)
+end;
